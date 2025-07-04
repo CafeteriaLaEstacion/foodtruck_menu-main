@@ -12,6 +12,15 @@ header {
   background-color: #e67e22;
   color: white;
   padding: 2rem 0;
+  transition: opacity 0.3s ease;
+}
+
+header.hidden {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
 }
 
 header p {
@@ -28,12 +37,12 @@ header p {
 }
 
 .menu-page {
-  padding: 2rem;
-  min-height: 100vh;
+  padding: 1rem 1rem 6rem;
+  min-height: calc(100vh - 140px);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -158,12 +167,23 @@ footer {
   transform: scale(1.1);
 }
 
+/* Estilo especial para móviles */
 @media (max-width: 600px) {
   .menu-page img,
   .logo-principal {
-    width: 100%;
+    max-width: 90%;
     height: auto;
-    max-height: 400px;
+    max-height: 300px;
+  }
+
+  .pagination {
+    position: fixed;
+    bottom: 70px;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    padding: 0.5rem 0;
+    z-index: 998;
   }
 
   #btn-inicio {
