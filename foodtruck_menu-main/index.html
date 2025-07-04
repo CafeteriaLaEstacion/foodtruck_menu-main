@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Estación - Menú</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <p>Descubre nuestro delicioso menú</p>
+  </header>
+
+  <main>
+    <section class="menu-page" id="page1">
+      <img src="images/logo-estacion.jpg" alt="Logo Principal" class="logo-principal">
+    </section>
+
+    <section class="menu-page hidden" id="page2">
+      <h2></h2>
+      <img src="images/promociones.jpg" alt="Waffles">
+    </section>
+
+    <section class="menu-page hidden" id="page3">
+      <h2></h2>
+      <img src="images/cafe.jpg" alt="Waffles">
+    </section>
+
+    <section class="menu-page hidden" id="page4">
+      <h2></h2>
+      <img src="images/bolleria.jpg" alt="Churros y Helados">
+    </section>
+
+    <section class="menu-page hidden" id="page5">
+      <h2></h2>
+      <img src="images/churros.jpg" alt="churros">
+    </section>
+
+    <section class="menu-page hidden" id="page6">
+      <h2></h2>
+      <img src="images/frituras.jpg" alt="frituras">
+    </section>
+
+    <section class="menu-page hidden" id="page7">
+      <h2>Waffles</h2>
+      <div class="imagen-doble">
+        <img src="images/waffle-dulce.jpg" alt="Waffle dulce">
+        <img src="images/waffles-salados.jpg" alt="Waffle salado">
+      </div>
+    </section>
+
+    <div class="pagination">
+      <button onclick="showPage(2)">Promociones</button>
+      <button onclick="showPage(3)">Cafetería</button>
+      <button onclick="showPage(4)">Bollerías</button>
+      <button onclick="showPage(5)">Churros</button>
+      <button onclick="showPage(6)">Frituras</button>
+      <button onclick="showPage(7)">Waffles</button>
+    </div>
+  </main>
+
+  <footer id="site-footer">
+    <div class="footer-info">
+      <div class="footer-redes">
+        <a href="https://wa.me/56937225932" target="_blank">
+          <img class="social-icon" src="images/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://instagram.com/laestacion_cafeteriaywaffleria" target="_blank">
+          <img class="social-icon" src="images/instagram.png" alt="Instagram">
+        </a>
+      </div>
+      <p class="direccion">
+        📍 <a href="https://www.google.com/maps/search/?api=1&query=Diego+Portales+50,+lote+4,+9540000+Paine,+Región+Metropolitana" target="_blank">
+          Diego Portales 50, Paine
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <a href="javascript:showPage(1)" id="btn-inicio">
+    <img src="images/inicio.png" alt="Volver al inicio">
+  </a>
+</body>
+</html>
